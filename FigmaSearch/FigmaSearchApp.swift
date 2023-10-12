@@ -4,7 +4,7 @@ import SwiftUI
 struct FigmaSearchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchView()
         }
     }
 }

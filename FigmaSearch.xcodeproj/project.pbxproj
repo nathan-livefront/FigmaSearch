@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D8D7D74E2AD87614008957BB /* FigmaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D74D2AD87614008957BB /* FigmaSearchApp.swift */; };
-		D8D7D7502AD87614008957BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D74F2AD87614008957BB /* ContentView.swift */; };
 		D8D7D7522AD87615008957BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D7512AD87615008957BB /* Assets.xcassets */; };
 		D8D7D7552AD87615008957BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D7542AD87615008957BB /* Preview Assets.xcassets */; };
 		D8D7D7792AD878D6008957BB /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7782AD878D6008957BB /* ImageResult.swift */; };
@@ -19,6 +18,7 @@
 		D8D7D7862AD87C1D008957BB /* Resources+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7852AD87C1D008957BB /* Resources+Models.swift */; };
 		D8D7D7892AD88166008957BB /* ImageResultSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D7872AD88150008957BB /* ImageResultSuccess.json */; };
 		D8D7D78B2AD88175008957BB /* ImageResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D78A2AD88175008957BB /* ImageResultTests.swift */; };
+		D8D7D78E2AD88717008957BB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D78D2AD88717008957BB /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,6 @@
 /* Begin PBXFileReference section */
 		D8D7D74A2AD87614008957BB /* FigmaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigmaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D7D74D2AD87614008957BB /* FigmaSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaSearchApp.swift; sourceTree = "<group>"; };
-		D8D7D74F2AD87614008957BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8D7D7512AD87615008957BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D7D7542AD87615008957BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8D7D75A2AD87615008957BB /* FigmaSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FigmaSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		D8D7D7872AD88150008957BB /* ImageResultSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageResultSuccess.json; sourceTree = "<group>"; };
 		D8D7D78A2AD88175008957BB /* ImageResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultTests.swift; sourceTree = "<group>"; };
 		D8D7D78C2AD886D9008957BB /* FigmaSearch.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FigmaSearch.xctestplan; sourceTree = "<group>"; };
+		D8D7D78D2AD88717008957BB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			children = (
 				D8D7D7772AD878C6008957BB /* Models */,
 				D8D7D74D2AD87614008957BB /* FigmaSearchApp.swift */,
-				D8D7D74F2AD87614008957BB /* ContentView.swift */,
+				D8D7D78D2AD88717008957BB /* SearchView.swift */,
 				D8D7D7512AD87615008957BB /* Assets.xcassets */,
 				D8D7D7532AD87615008957BB /* Preview Content */,
 			);
@@ -254,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D7D7502AD87614008957BB /* ContentView.swift in Sources */,
+				D8D7D78E2AD88717008957BB /* SearchView.swift in Sources */,
 				D8D7D7792AD878D6008957BB /* ImageResult.swift in Sources */,
 				D8D7D77B2AD8790A008957BB /* SearchResult.swift in Sources */,
 				D8D7D74E2AD87614008957BB /* FigmaSearchApp.swift in Sources */,
