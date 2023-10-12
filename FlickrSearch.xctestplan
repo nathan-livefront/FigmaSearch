@@ -19,9 +19,9 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:FigmaSearch.xcodeproj",
+        "containerPath" : "container:FlickrSearch.xcodeproj",
         "identifier" : "D8D7D7592AD87615008957BB",
-        "name" : "FigmaSearchTests"
+        "name" : "FlickrSearchTests"
       }
     }
   ],

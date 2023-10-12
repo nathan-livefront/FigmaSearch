@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct FigmaSearchApp: App {
+struct FlickrSearchApp: App {
     var body: some Scene {
         WindowGroup {
             SearchView()

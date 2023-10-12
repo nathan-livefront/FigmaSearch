@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8D7D7492AD87614008957BB"
-               BuildableName = "FigmaSearch.app"
-               BlueprintName = "FigmaSearch"
-               ReferencedContainer = "container:FigmaSearch.xcodeproj">
+               BuildableName = "FlickrSearch.app"
+               BlueprintName = "FlickrSearch"
+               ReferencedContainer = "container:FlickrSearch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:FigmaSearch.xctestplan"
+            reference = "container:FlickrSearch.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -40,9 +40,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8D7D7592AD87615008957BB"
-               BuildableName = "FigmaSearchTests.xctest"
-               BlueprintName = "FigmaSearchTests"
-               ReferencedContainer = "container:FigmaSearch.xcodeproj">
+               BuildableName = "FlickrSearchTests.xctest"
+               BlueprintName = "FlickrSearchTests"
+               ReferencedContainer = "container:FlickrSearch.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -53,7 +53,7 @@
                BlueprintIdentifier = "D8D7D7632AD87615008957BB"
                BuildableName = "FigmaSearchUITests.xctest"
                BlueprintName = "FigmaSearchUITests"
-               ReferencedContainer = "container:FigmaSearch.xcodeproj">
+               ReferencedContainer = "container:FlickrSearch.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8D7D7492AD87614008957BB"
-            BuildableName = "FigmaSearch.app"
-            BlueprintName = "FigmaSearch"
-            ReferencedContainer = "container:FigmaSearch.xcodeproj">
+            BuildableName = "FlickrSearch.app"
+            BlueprintName = "FlickrSearch"
+            ReferencedContainer = "container:FlickrSearch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -90,9 +90,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8D7D7492AD87614008957BB"
-            BuildableName = "FigmaSearch.app"
-            BlueprintName = "FigmaSearch"
-            ReferencedContainer = "container:FigmaSearch.xcodeproj">
+            BuildableName = "FlickrSearch.app"
+            BlueprintName = "FlickrSearch"
+            ReferencedContainer = "container:FlickrSearch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
