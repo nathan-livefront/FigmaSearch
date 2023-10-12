@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "2EF78AA2-25D3-4C49-9536-AEF05B28874C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FigmaSearch.xcodeproj",
+      "identifier" : "D8D7D7492AD87614008957BB",
+      "name" : "FigmaSearch"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FigmaSearch.xcodeproj",
+        "identifier" : "D8D7D7592AD87615008957BB",
+        "name" : "FigmaSearchTests"
+      }
+    }
+  ],
+  "version" : 1
+}

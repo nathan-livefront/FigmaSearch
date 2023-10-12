@@ -46,6 +46,7 @@
 		D8D7D7852AD87C1D008957BB /* Resources+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources+Models.swift"; sourceTree = "<group>"; };
 		D8D7D7872AD88150008957BB /* ImageResultSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageResultSuccess.json; sourceTree = "<group>"; };
 		D8D7D78A2AD88175008957BB /* ImageResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultTests.swift; sourceTree = "<group>"; };
+		D8D7D78C2AD886D9008957BB /* FigmaSearch.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FigmaSearch.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 		D8D7D7412AD87614008957BB = {
 			isa = PBXGroup;
 			children = (
+				D8D7D78C2AD886D9008957BB /* FigmaSearch.xctestplan */,
 				D8D7D74C2AD87614008957BB /* FigmaSearch */,
 				D8D7D75D2AD87615008957BB /* FigmaSearchTests */,
 				D8D7D74B2AD87614008957BB /* Products */,
