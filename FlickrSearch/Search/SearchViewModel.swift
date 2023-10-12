@@ -18,16 +18,22 @@ class SearchViewModel: ViewModel<SearchAction, SearchState> {
         switch action {
         case let .searchTextChanged(newValue):
             state.searchText = newValue
-            performSearch(with: newValue)
+            if newValue.isEmpty {
+                state.results = []
+            } else {
+                performSearch(with: newValue)
+            }
         }
     }
 
     // MARK: Private Methods
 
     private func performSearch(with searchText: String) {
+        print("Searching for: \(searchText)")
         Task {
             let tags = searchText
                 .replacingOccurrences(of: ", ", with: ",")
+                .replacingOccurrences(of: " ", with: ",")
                 .components(separatedBy: ",")
             do {
                 let response = try await service.retrieveImages(for: tags)

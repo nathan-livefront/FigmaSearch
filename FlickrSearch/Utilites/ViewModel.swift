@@ -5,6 +5,7 @@ import SwiftUI
 
 /// An object that is responsible for handling actions sent by a view and mutating state based on the actions received.
 ///
+@MainActor
 open class ViewModel<Action, State>: ObservableObject {
     // MARK: Properties
 

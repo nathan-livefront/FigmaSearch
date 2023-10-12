@@ -28,6 +28,12 @@ struct ImageResult {
     /// The associated media for this image.
     var media: [String: String]
 
+    /// The first link that was found in the media property.
+    var mediaLink: URL? {
+        guard let value = media.values.first else { return nil }
+        return URL(string: value)
+    }
+
     /// The date this image was posted on Flickr.
     var published: Date
 

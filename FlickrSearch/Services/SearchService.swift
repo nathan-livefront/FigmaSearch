@@ -23,6 +23,7 @@ class DefaultSearchService: SearchService {
     }
 
     func retrieveImages(for tags: [String]) async throws -> SearchResult {
+        print("Retrieving images for: \(tags)")
         let request = SearchRequest(tags: tags)
         let response = try await apiService.send(request: request)
         return response

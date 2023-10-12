@@ -202,6 +202,14 @@
 			children = (
 				D8D7D7A72AD89A9C008957BB /* SearchService.swift */,
 				D8D7D7B62AD8A1FF008957BB /* SearchRequest.swift */,
+				D8D7D7BA2AD8A78E008957BB /* NetworkingUtilities */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8D7D7BA2AD8A78E008957BB /* NetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
 				D8D7D7AA2AD89B63008957BB /* APIService.swift */,
 				D8D7D7AC2AD89BB2008957BB /* APIClient.swift */,
 				D8D7D7AE2AD89C00008957BB /* HTTPRequest.swift */,
@@ -209,7 +217,7 @@
 				D8D7D7B42AD89FC8008957BB /* Request.swift */,
 				D8D7D7B82AD8A414008957BB /* Response.swift */,
 			);
-			path = Services;
+			path = NetworkingUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

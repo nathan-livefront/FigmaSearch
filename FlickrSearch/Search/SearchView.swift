@@ -12,25 +12,30 @@ struct SearchView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [
-                GridItem(.flexible()),
-                GridItem(.flexible()),
-            ]) {
+            LazyVGrid(
+                columns: [
+                    GridItem(.adaptive(minimum: 150, maximum: .infinity)),
+                ],
+                spacing: 16
+            ) {
                 ForEach(viewModel.state.results) { image in
                     Button {
                         print("button pressed: \(image.link)")
                     } label: {
-                        Text(image.title)
-                            .foregroundColor(.white)
-                            .aspectRatio(contentMode: .fill)
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                            .aspectRatio(contentMode: .fit)
-                            .background(Color.gray)
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        AsyncImage(url: image.mediaLink) { image in
+                            image
+                                .resizable()
+                                .scaledToFill()
+                        } placeholder: {
+                            Color.gray
+                        }
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                        .aspectRatio(1, contentMode: .fill)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
                 }
             }
-            .padding()
+            .padding(16)
         }
         .searchable(
             text: viewModel.binding(
