@@ -11,7 +11,14 @@
 		D8D7D7502AD87614008957BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D74F2AD87614008957BB /* ContentView.swift */; };
 		D8D7D7522AD87615008957BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D7512AD87615008957BB /* Assets.xcassets */; };
 		D8D7D7552AD87615008957BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D7542AD87615008957BB /* Preview Assets.xcassets */; };
-		D8D7D75F2AD87615008957BB /* FigmaSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D75E2AD87615008957BB /* FigmaSearchTests.swift */; };
+		D8D7D7792AD878D6008957BB /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7782AD878D6008957BB /* ImageResult.swift */; };
+		D8D7D77B2AD8790A008957BB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D77A2AD8790A008957BB /* SearchResult.swift */; };
+		D8D7D77D2AD8795E008957BB /* SearchResultSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D77C2AD8795E008957BB /* SearchResultSuccess.json */; };
+		D8D7D7812AD87975008957BB /* SearchResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7802AD87975008957BB /* SearchResultTests.swift */; };
+		D8D7D7842AD879B1008957BB /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7832AD879B1008957BB /* Resources.swift */; };
+		D8D7D7862AD87C1D008957BB /* Resources+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7852AD87C1D008957BB /* Resources+Models.swift */; };
+		D8D7D7892AD88166008957BB /* ImageResultSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D7D7872AD88150008957BB /* ImageResultSuccess.json */; };
+		D8D7D78B2AD88175008957BB /* ImageResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D78A2AD88175008957BB /* ImageResultTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,14 @@
 		D8D7D7512AD87615008957BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D7D7542AD87615008957BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8D7D75A2AD87615008957BB /* FigmaSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FigmaSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D7D75E2AD87615008957BB /* FigmaSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaSearchTests.swift; sourceTree = "<group>"; };
+		D8D7D7782AD878D6008957BB /* ImageResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResult.swift; sourceTree = "<group>"; };
+		D8D7D77A2AD8790A008957BB /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		D8D7D77C2AD8795E008957BB /* SearchResultSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchResultSuccess.json; sourceTree = "<group>"; };
+		D8D7D7802AD87975008957BB /* SearchResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTests.swift; sourceTree = "<group>"; };
+		D8D7D7832AD879B1008957BB /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D8D7D7852AD87C1D008957BB /* Resources+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources+Models.swift"; sourceTree = "<group>"; };
+		D8D7D7872AD88150008957BB /* ImageResultSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageResultSuccess.json; sourceTree = "<group>"; };
+		D8D7D78A2AD88175008957BB /* ImageResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 		D8D7D74C2AD87614008957BB /* FigmaSearch */ = {
 			isa = PBXGroup;
 			children = (
+				D8D7D7772AD878C6008957BB /* Models */,
 				D8D7D74D2AD87614008957BB /* FigmaSearchApp.swift */,
 				D8D7D74F2AD87614008957BB /* ContentView.swift */,
 				D8D7D7512AD87615008957BB /* Assets.xcassets */,
@@ -92,9 +107,47 @@
 		D8D7D75D2AD87615008957BB /* FigmaSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7D75E2AD87615008957BB /* FigmaSearchTests.swift */,
+				D8D7D7822AD879A8008957BB /* TestHelpers */,
+				D8D7D77E2AD87965008957BB /* Models */,
 			);
 			path = FigmaSearchTests;
+			sourceTree = "<group>";
+		};
+		D8D7D7772AD878C6008957BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D7782AD878D6008957BB /* ImageResult.swift */,
+				D8D7D77A2AD8790A008957BB /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8D7D77E2AD87965008957BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D77F2AD8796A008957BB /* Fixtures */,
+				D8D7D78A2AD88175008957BB /* ImageResultTests.swift */,
+				D8D7D7802AD87975008957BB /* SearchResultTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8D7D77F2AD8796A008957BB /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D7852AD87C1D008957BB /* Resources+Models.swift */,
+				D8D7D77C2AD8795E008957BB /* SearchResultSuccess.json */,
+				D8D7D7872AD88150008957BB /* ImageResultSuccess.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		D8D7D7822AD879A8008957BB /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D7832AD879B1008957BB /* Resources.swift */,
+			);
+			path = TestHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D7D7892AD88166008957BB /* ImageResultSuccess.json in Resources */,
+				D8D7D77D2AD8795E008957BB /* SearchResultSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D7D7502AD87614008957BB /* ContentView.swift in Sources */,
+				D8D7D7792AD878D6008957BB /* ImageResult.swift in Sources */,
+				D8D7D77B2AD8790A008957BB /* SearchResult.swift in Sources */,
 				D8D7D74E2AD87614008957BB /* FigmaSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D7D75F2AD87615008957BB /* FigmaSearchTests.swift in Sources */,
+				D8D7D7812AD87975008957BB /* SearchResultTests.swift in Sources */,
+				D8D7D7862AD87C1D008957BB /* Resources+Models.swift in Sources */,
+				D8D7D78B2AD88175008957BB /* ImageResultTests.swift in Sources */,
+				D8D7D7842AD879B1008957BB /* Resources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
