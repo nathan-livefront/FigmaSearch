@@ -4,7 +4,16 @@ import Foundation
 
 /// An object representing the results from performing a search on Flickr.
 ///
-struct SearchResult: Codable {
+struct SearchResult: Codable, JsonResponse {
+    // MARK: Type Properties
+
+    static let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }()
+
     // MARK: Properties
 
     /// A description of this search result.
