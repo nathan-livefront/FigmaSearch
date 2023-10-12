@@ -4,23 +4,7 @@ import Foundation
 
 /// An individual image result from a search request.
 ///
-struct ImageResult: Codable {
-    // MARK: Types
-
-    /// The coding keys for `ImageResult`. Needs to be explicitly defined since we are performing custom decoding and
-    /// encoding.
-    enum CodingKeys: CodingKey {
-        case title
-        case link
-        case media
-        case dateTaken
-        case description
-        case published
-        case author
-        case authorId
-        case tags
-    }
-
+struct ImageResult {
     // MARK: Properties
 
     /// The name or username of the author of this image.
@@ -54,7 +38,25 @@ struct ImageResult: Codable {
     var title: String
 }
 
-extension ImageResult {
+// MARK: Codable
+
+extension ImageResult: Codable {
+    // MARK: Types
+
+    /// The coding keys for `ImageResult`. Needs to be explicitly defined since we are performing custom decoding and
+    /// encoding.
+    enum CodingKeys: CodingKey {
+        case title
+        case link
+        case media
+        case dateTaken
+        case description
+        case published
+        case author
+        case authorId
+        case tags
+    }
+
     // MARK: Initialization
 
     init(from decoder: Decoder) throws {
@@ -87,5 +89,40 @@ extension ImageResult {
         try container.encode("\(self.authorEmail) (\\\"\(self.author)\\\")", forKey: .author)
         try container.encode(self.authorId, forKey: .authorId)
         try container.encode(self.tags.joined(separator: " "), forKey: .tags)
+    }
+}
+
+// MARK: Identifiable
+
+extension ImageResult: Identifiable {
+    var id: URL { link }
+}
+
+// MARK: Fixtures
+
+extension ImageResult {
+    static var fixture: Self {
+        Self.init(
+            author: "kwattalive",
+            authorEmail: "nobody@flickr.com",
+            authorId: "198785474@N03",
+            dateTaken: try! Date("2023-10-08T08:42:00-08:00", strategy: .iso8601),
+            description: """
+             <p><a href=\"https://www.flickr.com/people/kilowattusaf/\">kwattalive</a> posted a photo:</p> <p><a href=\"https://www.flickr.com/photos/kilowattusaf/53250196148/\" title=\"DSCF0693\"><img src=\"https://live.staticflickr.com/65535/53250196148_ee45194b42_m.jpg\" width=\"240\" height=\"160\" alt=\"DSCF0693\" /></a></p> <p>Turnbull Wildlife Refuge Cheney, WA</p>
+            """,
+            link: URL(string: "https://www.flickr.com/photos/kilowattusaf/53250196148/")!,
+            media: [
+                "m": "https://live.staticflickr.com/65535/53250196148_ee45194b42_m.jpg"
+            ],
+            published: try! Date("2023-10-11T04:10:29Z", strategy: .iso8601),
+            tags: [
+                "turnbullwildliferefuge",
+                "turnbull",
+                "friendsofturnbull",
+                "twr",
+                "porcupine",
+            ],
+            title: "DSCF0693"
+        )
     }
 }

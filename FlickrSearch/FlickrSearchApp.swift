@@ -4,7 +4,13 @@ import SwiftUI
 struct FlickrSearchApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            NavigationStack {
+                SearchView(
+                    viewModel: SearchViewModel(
+                        state: SearchState()
+                    )
+                )
+            }
         }
     }
 }
