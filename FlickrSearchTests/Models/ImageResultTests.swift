@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import FigmaSearch
+@testable import FlickrSearch
 
 // MARK: - ImageResultTests
 

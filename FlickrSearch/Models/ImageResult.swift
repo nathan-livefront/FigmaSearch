@@ -4,7 +4,7 @@ import Foundation
 
 /// An individual image result from a search request.
 ///
-struct ImageResult {
+struct ImageResult: Equatable, Hashable {
     // MARK: Properties
 
     /// The name or username of the author of this image.

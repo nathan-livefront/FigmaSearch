@@ -1,3 +1,4 @@
+import Combine
 import Foundation
 
 // MARK: - SearchViewModel
@@ -6,6 +7,8 @@ import Foundation
 ///
 class SearchViewModel: ViewModel<SearchAction, SearchState> {
     var service: SearchService
+
+    private var currentSearchingTask: Task<(), Never>?
 
     init(service: SearchService, state: SearchState) {
         self.service = service
@@ -16,21 +19,33 @@ class SearchViewModel: ViewModel<SearchAction, SearchState> {
 
     override func receive(_ action: SearchAction) {
         switch action {
+        case .dismissDetail:
+            state.imageResultPresentedInDetail = nil
+        case let .imagePressed(newValue):
+            state.imageResultPresentedInDetail = newValue
         case let .searchTextChanged(newValue):
             state.searchText = newValue
-            if newValue.isEmpty {
-                state.results = []
-            } else {
-                performSearch(with: newValue)
-            }
+            performSearch(with: newValue)
+        case let .tagSelected(newValue):
+            state.imageResultPresentedInDetail = nil
+            state.searchText = newValue
+            performSearch(with: newValue)
         }
     }
 
     // MARK: Private Methods
 
     private func performSearch(with searchText: String) {
+        guard !searchText.isEmpty else {
+            state.results = []
+            return
+        }
+
         print("Searching for: \(searchText)")
-        Task {
+        if let currentSearchingTask {
+            currentSearchingTask.cancel()
+        }
+        currentSearchingTask = Task {
             let tags = searchText
                 .replacingOccurrences(of: ", ", with: ",")
                 .replacingOccurrences(of: " ", with: ",")
@@ -40,7 +55,10 @@ class SearchViewModel: ViewModel<SearchAction, SearchState> {
                 state.results = response.items
             } catch {
                 print(error)
+                // TODO: Present an alert when there is a network error
             }
+
+            self.currentSearchingTask = nil
         }
     }
 }
