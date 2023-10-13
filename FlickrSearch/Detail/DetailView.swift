@@ -41,6 +41,7 @@ struct DetailView: View {
                     tagList
                 }
                 .padding(.horizontal)
+                .multilineTextAlignment(.leading)
             }
         }
         .navigationTitle("Detail")
@@ -95,6 +96,7 @@ struct DetailView: View {
                     .font(.system(.caption))
                 Text(tagValue)
                     .font(.system(.callout))
+                    .multilineTextAlignment(.leading)
             }
             .foregroundColor(.white)
             .padding(4)

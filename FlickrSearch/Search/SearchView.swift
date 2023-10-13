@@ -85,12 +85,12 @@ struct SearchView: View {
                     Text(imageResult.title)
                         .lineLimit(1)
                         .padding([.bottom, .leading], 4)
-                        .padding(.top, 16)
+                        .padding(.top, 24)
                         .foregroundColor(.white)
                     Spacer()
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
-                .background(LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(0.6)]), startPoint: .top, endPoint: .bottom))
+                .background(LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(0.2), .black.opacity(0.6)]), startPoint: .top, endPoint: .bottom))
             }
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .accessibilityLabel(Text(imageResult.title))
