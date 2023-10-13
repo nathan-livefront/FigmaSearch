@@ -19,9 +19,9 @@
       ]
     },
     "targetForVariableExpansion" : {
-      "containerPath" : "container:FigmaSearch.xcodeproj",
+      "containerPath" : "container:FlickrSearch.xcodeproj",
       "identifier" : "D8D7D7492AD87614008957BB",
-      "name" : "FigmaSearch"
+      "name" : "FlickrSearch"
     }
   },
   "testTargets" : [

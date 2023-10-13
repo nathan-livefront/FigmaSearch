@@ -56,7 +56,7 @@
 			containerPortal = D8D7D7422AD87614008957BB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D8D7D7492AD87614008957BB;
-			remoteInfo = FigmaSearch;
+			remoteInfo = FlickrSearch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -326,7 +326,7 @@
 			dependencies = (
 			);
 			name = FlickrSearch;
-			productName = FigmaSearch;
+			productName = FlickrSearch;
 			productReference = D8D7D74A2AD87614008957BB /* FlickrSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -347,7 +347,7 @@
 			packageProductDependencies = (
 				D8D7D7DF2AD8F6C9008957BB /* ViewInspector */,
 			);
-			productName = FigmaSearchTests;
+			productName = FlickrSearchTests;
 			productReference = D8D7D75A2AD87615008957BB /* FlickrSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
