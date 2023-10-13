@@ -42,20 +42,6 @@ open class ViewModel<Action, State>: ObservableObject {
         )
     }
 
-    /// Creates a `Binding` who's value is derived from the view model's state. Updating the value has no effect.
-    ///
-    /// - Parameters:
-    ///   - get: A closure that provides a value for the binding that is derived from the view model's state.
-    /// - Returns: A `Binding` whose value is set from the view model's state and which triggers an action to be
-    ///   processed by the view model when the value changes.
-    ///
-    func binding<Value>(get: @escaping (State) -> Value) -> Binding<Value> {
-        Binding(
-            get: { get(self.state) },
-            set: { _ in }
-        )
-    }
-
     /// Receives and processes the provided action.
     ///
     /// - Parameter action: The action to process.

@@ -127,6 +127,7 @@ extension ImageResult {
                 "friendsofturnbull",
                 "twr",
                 "porcupine",
+                "another tag",
             ],
             title: "DSCF0693"
         )

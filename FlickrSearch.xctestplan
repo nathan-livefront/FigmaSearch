@@ -9,7 +9,15 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:FlickrSearch.xcodeproj",
+          "identifier" : "D8D7D7492AD87614008957BB",
+          "name" : "FlickrSearch"
+        }
+      ]
+    },
     "targetForVariableExpansion" : {
       "containerPath" : "container:FigmaSearch.xcodeproj",
       "identifier" : "D8D7D7492AD87614008957BB",

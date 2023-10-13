@@ -81,6 +81,7 @@ struct SearchView: View {
             .aspectRatio(1, contentMode: .fill)
             .clipShape(RoundedRectangle(cornerRadius: 12))
         }
+        .id(imageResult.id)
     }
 }
 

@@ -38,6 +38,16 @@
 		D8D7D7C62AD8E970008957BB /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7C52AD8E970008957BB /* SearchViewModelTests.swift */; };
 		D8D7D7C82AD8E9D0008957BB /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7C72AD8E9D0008957BB /* MockSearchService.swift */; };
 		D8D7D7CA2AD8EA19008957BB /* ExampleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7C92AD8EA19008957BB /* ExampleError.swift */; };
+		D8D7D7CC2AD8ED2F008957BB /* SearchStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7CB2AD8ED2F008957BB /* SearchStateTests.swift */; };
+		D8D7D7CF2AD8EDB3008957BB /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7CE2AD8EDB3008957BB /* DetailViewModelTests.swift */; };
+		D8D7D7D12AD8EF2A008957BB /* DetailStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7D02AD8EF2A008957BB /* DetailStateTests.swift */; };
+		D8D7D7D32AD8EFDA008957BB /* SearchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7D22AD8EFDA008957BB /* SearchServiceTests.swift */; };
+		D8D7D7D62AD8F03A008957BB /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7D52AD8F03A008957BB /* MockClient.swift */; };
+		D8D7D7D82AD8F4CB008957BB /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7D72AD8F4CB008957BB /* HTTPRequest.swift */; };
+		D8D7D7DD2AD8F6B6008957BB /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7DC2AD8F6B6008957BB /* SearchViewTests.swift */; };
+		D8D7D7E02AD8F6C9008957BB /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = D8D7D7DF2AD8F6C9008957BB /* ViewInspector */; };
+		D8D7D7E22AD8F7E1008957BB /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7E12AD8F7E1008957BB /* MockViewModel.swift */; };
+		D8D7D7E42AD8F85E008957BB /* DetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D7E32AD8F85E008957BB /* DetailViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +95,15 @@
 		D8D7D7C52AD8E970008957BB /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		D8D7D7C72AD8E9D0008957BB /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
 		D8D7D7C92AD8EA19008957BB /* ExampleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleError.swift; sourceTree = "<group>"; };
+		D8D7D7CB2AD8ED2F008957BB /* SearchStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStateTests.swift; sourceTree = "<group>"; };
+		D8D7D7CE2AD8EDB3008957BB /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		D8D7D7D02AD8EF2A008957BB /* DetailStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStateTests.swift; sourceTree = "<group>"; };
+		D8D7D7D22AD8EFDA008957BB /* SearchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceTests.swift; sourceTree = "<group>"; };
+		D8D7D7D52AD8F03A008957BB /* MockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
+		D8D7D7D72AD8F4CB008957BB /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		D8D7D7DC2AD8F6B6008957BB /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
+		D8D7D7E12AD8F7E1008957BB /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
+		D8D7D7E32AD8F85E008957BB /* DetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D7D7E02AD8F6C9008957BB /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,7 @@
 				D8D7D74C2AD87614008957BB /* FlickrSearch */,
 				D8D7D75D2AD87615008957BB /* FlickrSearchTests */,
 				D8D7D74B2AD87614008957BB /* Products */,
+				D8D7D7DE2AD8F6C9008957BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +171,11 @@
 		D8D7D75D2AD87615008957BB /* FlickrSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				D8D7D7D42AD8EFE0008957BB /* Services */,
+				D8D7D77E2AD87965008957BB /* Models */,
+				D8D7D7CD2AD8EDA6008957BB /* Detail */,
 				D8D7D7C42AD8E965008957BB /* Search */,
 				D8D7D7822AD879A8008957BB /* TestHelpers */,
-				D8D7D77E2AD87965008957BB /* Models */,
 			);
 			path = FlickrSearchTests;
 			sourceTree = "<group>";
@@ -192,6 +215,8 @@
 				D8D7D7832AD879B1008957BB /* Resources.swift */,
 				D8D7D7C72AD8E9D0008957BB /* MockSearchService.swift */,
 				D8D7D7C92AD8EA19008957BB /* ExampleError.swift */,
+				D8D7D7D52AD8F03A008957BB /* MockClient.swift */,
+				D8D7D7E12AD8F7E1008957BB /* MockViewModel.swift */,
 			);
 			path = TestHelpers;
 			sourceTree = "<group>";
@@ -252,9 +277,37 @@
 		D8D7D7C42AD8E965008957BB /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				D8D7D7CB2AD8ED2F008957BB /* SearchStateTests.swift */,
 				D8D7D7C52AD8E970008957BB /* SearchViewModelTests.swift */,
+				D8D7D7DC2AD8F6B6008957BB /* SearchViewTests.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		D8D7D7CD2AD8EDA6008957BB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D7CE2AD8EDB3008957BB /* DetailViewModelTests.swift */,
+				D8D7D7D02AD8EF2A008957BB /* DetailStateTests.swift */,
+				D8D7D7E32AD8F85E008957BB /* DetailViewTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D8D7D7D42AD8EFE0008957BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D7D22AD8EFDA008957BB /* SearchServiceTests.swift */,
+				D8D7D7D72AD8F4CB008957BB /* HTTPRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8D7D7DE2AD8F6C9008957BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +344,9 @@
 				D8D7D75C2AD87615008957BB /* PBXTargetDependency */,
 			);
 			name = FlickrSearchTests;
+			packageProductDependencies = (
+				D8D7D7DF2AD8F6C9008957BB /* ViewInspector */,
+			);
 			productName = FigmaSearchTests;
 			productReference = D8D7D75A2AD87615008957BB /* FlickrSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -323,6 +379,9 @@
 				Base,
 			);
 			mainGroup = D8D7D7412AD87614008957BB;
+			packageReferences = (
+				D8D7D7DB2AD8F5E2008957BB /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = D8D7D74B2AD87614008957BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -386,13 +445,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D7D7D62AD8F03A008957BB /* MockClient.swift in Sources */,
+				D8D7D7E42AD8F85E008957BB /* DetailViewTests.swift in Sources */,
 				D8D7D7CA2AD8EA19008957BB /* ExampleError.swift in Sources */,
 				D8D7D7812AD87975008957BB /* SearchResultTests.swift in Sources */,
+				D8D7D7D82AD8F4CB008957BB /* HTTPRequest.swift in Sources */,
+				D8D7D7DD2AD8F6B6008957BB /* SearchViewTests.swift in Sources */,
+				D8D7D7E22AD8F7E1008957BB /* MockViewModel.swift in Sources */,
 				D8D7D7862AD87C1D008957BB /* Resources+Models.swift in Sources */,
+				D8D7D7CC2AD8ED2F008957BB /* SearchStateTests.swift in Sources */,
 				D8D7D78B2AD88175008957BB /* ImageResultTests.swift in Sources */,
+				D8D7D7CF2AD8EDB3008957BB /* DetailViewModelTests.swift in Sources */,
 				D8D7D7C82AD8E9D0008957BB /* MockSearchService.swift in Sources */,
 				D8D7D7842AD879B1008957BB /* Resources.swift in Sources */,
+				D8D7D7D12AD8EF2A008957BB /* DetailStateTests.swift in Sources */,
 				D8D7D7C62AD8E970008957BB /* SearchViewModelTests.swift in Sources */,
+				D8D7D7D32AD8EFDA008957BB /* SearchServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +720,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8D7D7DB2AD8F5E2008957BB /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8D7D7DF2AD8F6C9008957BB /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8D7D7DB2AD8F5E2008957BB /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8D7D7422AD87614008957BB /* Project object */;
 }

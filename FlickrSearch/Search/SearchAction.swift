@@ -1,7 +1,7 @@
 // MARK: - SearchAction
 
 /// A set of actions that can be handled by a `SearchViewModel`
-enum SearchAction {
+enum SearchAction: Equatable {
     /// The dismiss button was pressed in the detail screen.
     case dismissDetail
 
