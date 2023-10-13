@@ -25,6 +25,7 @@ struct DetailView: View {
                         Text("\(viewModel.state.width) × \(viewModel.state.height)")
                             .font(.system(.caption))
                             .foregroundColor(.secondary)
+                            .accessibilityLabel(Text("Dimensions: \(viewModel.state.width) by \(viewModel.state.height)"))
                     }
                     .padding(.trailing)
                 }
@@ -73,6 +74,7 @@ struct DetailView: View {
                     Button("Show all") {
                         viewModel.receive(.showAllTagsPressed)
                     }
+                    .accessibilityLabel("Show all tags")
                 }
             }
         }
@@ -98,7 +100,9 @@ struct DetailView: View {
             .padding(4)
             .background(Color.gray.opacity(0.75))
             .clipShape(RoundedRectangle(cornerRadius: 4))
+            .accessibilityLabel(Text("\(tagValue) tag"))
         }
+        .accessibilityHint(Text("search for tag"))
     }
 }
 

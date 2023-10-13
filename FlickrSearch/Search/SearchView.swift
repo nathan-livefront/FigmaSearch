@@ -28,6 +28,7 @@ struct SearchView: View {
                     )
                 }
             }
+            .navigationTitle("Flickr")
             .navigationBarTitleDisplayMode(.large)
     }
 
@@ -52,11 +53,10 @@ struct SearchView: View {
                 set: SearchAction.searchTextChanged
             ),
             placement: .navigationBarDrawer(displayMode: .always),
-            prompt: "porcupine"
+            prompt: "Search"
         )
         .scrollDismissesKeyboard(.immediately)
         .background(Color(.systemGroupedBackground).ignoresSafeArea())
-        .navigationTitle("Search")
     }
 
     // MARK: Methods
@@ -70,16 +70,30 @@ struct SearchView: View {
         Button {
             viewModel.receive(.imagePressed(imageResult))
         } label: {
-            AsyncImage(url: imageResult.mediaLink) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                Color.gray
+            ZStack(alignment: .bottomLeading) {
+                AsyncImage(url: imageResult.mediaLink) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                } placeholder: {
+                    Color.gray
+                }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .aspectRatio(1, contentMode: .fill)
+
+                HStack {
+                    Text(imageResult.title)
+                        .lineLimit(1)
+                        .padding([.bottom, .leading], 4)
+                        .padding(.top, 16)
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .background(LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(0.6)]), startPoint: .top, endPoint: .bottom))
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .aspectRatio(1, contentMode: .fill)
             .clipShape(RoundedRectangle(cornerRadius: 12))
+            .accessibilityLabel(Text(imageResult.title))
         }
         .id(imageResult.id)
     }
